@@ -116,15 +116,15 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  border-radius: 0%;
+  border: 0;
   border-radius: 4px;
-  padding: 10 32;
+  padding: 10px 32px;
 
   /*убрать бордер
   добавить бордер радиус 4 
   добавить падинг 10 32*/
 
-}
+} 
 
 .hero{
   padding: 200px 0;
@@ -218,7 +218,24 @@
   
     
     /*Work*/
-    
+
+    /*Feacher-list*/
+
+    .feacher-list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .feacher-list .item{
+      width: 300px;
+      
+    }
+     
+    .list{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
    .section-title {
      color: var(--background-color);
      font-weight: 700;
@@ -240,7 +257,23 @@
       line-height: 1.71;
 
     }
+    .test-container{
+      width: 1600px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     
+    .flex-container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-element{
+      width: 270px;
+      margin-right: 30px;
+    }
        /*Work */
        .work{
          color: var(--background-color);
@@ -256,8 +289,24 @@
           font-weight: 700;
           font-size: 36px;
           line-height: 1.16;
-      
+        }
 
+        .work-container{
+          width: 1600px;
+          padding-left: 30px;
+          padding-right: 30px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .two-container{
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .two-element{
+          width: 370px;
+          margin-right: 30px;
         }
      
       .team-title{
@@ -267,8 +316,24 @@
        font-weight: 500;
         font-size: 16px;
        line-height: 1.18;
-      
+      }
 
+      .doing-container{
+        width: 1230px;
+        padding-left: 15px;
+        padding-right: 15px;
+       margin-left: auto;
+        margin-right: auto;
+      }
+
+      .icon-container{
+       display: flex;
+       flex-wrap: wrap;
+      }
+
+      .icon-element{
+        width: 370px;
+        margin-right: 30px;
       }
        /*footer*/
       .page-footer{
