@@ -242,21 +242,40 @@
      font-size: 36px;
      line-height: 1.16;
     }
-     .title{
-     color: var(--background-color);
-     font-weight: 700;
-     font-size: 14px;
-     line-height: 1.14;
-     }
-    .paragraph{
+    
+    .btn-container{
+      width: 988px;
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .text-container{
+      width: 1600px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .paragraph-element{
+      width: 270px;
+      padding-left: 30px;
+      padding-right: 30px;
+
       color: var(--background-color);
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
-
+      
     }
+    .text-element{
+      display: block;
+      flex-wrap: wrap;
+    }
+
     .test-container{
       width: 1600px;
       padding-left: 30px;
@@ -347,28 +366,28 @@
        font-weight: 700;
        font-size: 26px;
        line-height: 1.19;
+       letter-spacing: 0.03em;
      }
      .addres-footer{
        color: #FFFFFF;
        font-weight: 400;
        font-size: 14px;
        line-height: 24px;
+       letter-spacing: 0.03em;
      }
       .mail-footer{
         color:rgba(255, 255, 255, 0.6); ;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-}
-       .mail-footer{
-         color: rgba(255, 255, 255, 0.6);
-         font-size: 14px;
-         line-height: 24px;
-       }
+      }
       .phone-footer{
         color: rgba(255, 255, 255, 0.6);
         font-size: 14px;
-        line-height: 24px; }
+        line-height: 24px;
+        letter-spacing: 0.03em;
+      }
+        
 
        
 
