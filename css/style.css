@@ -68,7 +68,7 @@
 }
 
 .link{
-  color: var(--background-color);
+  color: var(--title-text-color);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -282,9 +282,35 @@ border-radius: 0px 0px 4px 4px;
       background-color: var(--accent-color);
       color: var(--secondary-button);
       
+      
     }
-  
+  .icon-container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
 
+ .icon-element{
+  width: 370px;
+  margin: 30px 0 0;
+  border: 1px solid #EEEEEE;
+  padding-top: 0px;
+  padding-bottom: 110px;
+ }
+ 
+ .prh{
+  margin: 20px 0 4 0;
+  margin-left: 24px;
+ }
+  
+ .work-element{
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+ }
   /*Contact*/
 
   
@@ -383,11 +409,12 @@ border-radius: 0px 0px 4px 4px;
     }
     
     .btn-container{
-      width: 988px;
-      padding-left: 8px;
-      padding-right: 8px;
-      margin-left: auto;
-      margin-right: auto;
+      display:flex;
+      justify-content: center;
+    }
+     
+    .secondary-button{
+      margin-right: 30px;
     }
     
     .text-element{
@@ -479,8 +506,12 @@ border-radius: 0px 0px 4px 4px;
         margin: 0;
         padding: 0;
         padding-top: 20px;
-
       }
+
+      .contact-phone {
+        color: var(--primary-text-color);
+      }
+
       .mail-footer{
         margin: 9px 0;
       }
