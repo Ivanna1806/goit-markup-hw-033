@@ -113,7 +113,11 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 25px 0;
+  padding: 25px 0 25px 0;
+}
+
+.nav {
+  padding: 25px 0 25px 0;
 }
 
 .logo {
@@ -177,6 +181,10 @@ li {
 }
 
 /*auth-nav*/
+
+.auth-nav {
+  margin-left: auto;
+}
 
 /*  hero  */
 
@@ -247,17 +255,21 @@ li {
 }
 
 .team-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 1.14;
   line-height: 19px;
   padding-top: 30px;
   padding-bottom: 10px;
 
-  text-align: center;
+  line-height: 16px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
   color: var(--title-text-color);
+
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .paragraph {
@@ -377,7 +389,7 @@ li {
 
 .list {
   padding: 0;
-  margin: 0;
+  /*margin: 0;*/
   list-style: none;
 }
 
@@ -398,12 +410,26 @@ li {
   flex-wrap: wrap;
 }
 
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  padding: 94px 0 94px 0;
+}
 .test-container {
   width: 1600px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 
 .flex-container {
@@ -467,7 +493,12 @@ li {
   padding: 0;
   padding-top: 20px;
 }
-
+.contact-list:hover {
+  color: var(--white-color);
+}
+.contact-list:focus {
+  color: var(--white-color);
+}
 .logo-link {
   color: var(--title-text-color);
   font-family: 'Raleway';
@@ -502,4 +533,9 @@ li {
   line-height: 24px;
   letter-spacing: 0.03em;
   font-style: normal;
+}
+
+.footer ul a:hover,
+.footer ul a:focus {
+  color: var(--white-color);
 }
