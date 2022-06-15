@@ -67,15 +67,11 @@ h2 {
   color: var(--title-text-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1170px;
+  /*width: 100%;*/
+  width: 1200px;
+  padding: 0 15px;
 }
 
 .list,
@@ -116,8 +112,9 @@ li {
   padding: 25px 0 25px 0;
 }
 
-.nav {
-  padding: 25px 0 25px 0;
+.nav-item {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -152,8 +149,6 @@ li {
 
 .site-nav {
   display: flex;
-  width: 300px;
-  justify-content: space-between;
 }
 
 .site-nav .list {
@@ -169,15 +164,15 @@ li {
 }
 
 .list .link {
-  padding: 0 25px;
+  margin: 0 25px;
 }
 
 .list .item:first-child .link {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .list .item:last-child .link {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 /*auth-nav*/
@@ -193,13 +188,10 @@ li {
   background-color: var(--footer-color);
 }
 
-.hero {
-  background-color: var(--footer-color);
-}
-
 .primary-button {
   display: block;
-  margin: 40px auto 0 auto;
+  margin-top: 30px;
+  margin: 30px auto 0 auto;
   font-family: inherit;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -209,6 +201,7 @@ li {
   border: 0;
   border-radius: 4px;
   padding: 10px 32px;
+  letter-spacing: 0.06em;
 }
 
 .hero-title {
@@ -247,7 +240,6 @@ li {
 
 .team-section {
   background: var(--secondary-button);
-  padding: 94px 0 94px 0;
 }
 
 .team-section .work-container {
@@ -272,6 +264,10 @@ li {
   letter-spacing: 0.03em;
 }
 
+.container.nav {
+  display: flex;
+  align-items: center;
+}
 .paragraph {
   font-style: normal;
   font-weight: 400;
@@ -316,7 +312,7 @@ li {
   border: 0;
 }
 
-.section-card {
+.section {
   padding: 94px 0;
 }
 
@@ -408,12 +404,14 @@ li {
 .text-element {
   display: block;
   flex-wrap: wrap;
+  letter-spacing: 0.03em;
 }
-
 .benefits {
   display: flex;
   justify-content: space-between;
-  padding: 94px 0 94px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .test-container {
   width: 1600px;
@@ -511,17 +509,18 @@ li {
 
 .addres-footer {
   color: var(--white-color);
-  font-weight: 400;
+  margin-top: 9px 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
 }
 
 .mail-footer {
   color: var(--footer-contacts-color);
+  margin-top: 9px 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 9px 0;
   font-style: normal;
@@ -529,13 +528,17 @@ li {
 
 .phone-footer {
   color: var(--footer-contacts-color);
+  margin-top: 9px 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
 }
 
 .footer ul a:hover,
 .footer ul a:focus {
-  color: var(--white-color);
+  color: var(--accent-color);
+}
+.footer-address {
+  margin-top: 15px 0;
 }
