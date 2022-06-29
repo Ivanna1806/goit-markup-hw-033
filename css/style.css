@@ -13,10 +13,22 @@ body {
   color: var(--title-text-color);
   background-color: var(--white-color);
   font-size: 14px;
-  letter-spacing: 0.03;
-  margin: 0;
+  letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: 1px;
+  padding: 0;
+
+  white-space: nowape;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 h1,
 h2,
 h3,
@@ -52,7 +64,6 @@ h3 {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
@@ -92,6 +103,10 @@ li {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .link-wrapper {
@@ -138,7 +153,9 @@ li {
 .mail-link {
   color: var(--primary-text-color);
 }
-
+.contact-mail {
+  color: var(--primary-text-color);
+}
 .contact-phone {
   color: var(--primary-text-color);
 }
@@ -262,7 +279,6 @@ li {
 
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 
   color: var(--title-text-color);
 
@@ -325,7 +341,7 @@ li {
 .secondary-button:hover,
 .current:focus {
   background-color: var(--accent-color);
-  color: var(--secondary-button);
+  color: var(--white-color);
 }
 .secondary-button:hover,
 .secondary-button:focus {
@@ -533,6 +549,7 @@ li {
 
 .mail-footer {
   color: var(--footer-contacts-color);
+  font-weight: 400px;
   margin-top: 9px 0;
   font-size: 14px;
   line-height: 1.71;
