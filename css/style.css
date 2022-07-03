@@ -65,6 +65,7 @@ h3 {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  text-transform: uppercase;
 }
 
 h2 {
@@ -339,14 +340,9 @@ li {
 }
 
 .secondary-button:hover,
-.current:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-}
-.secondary-button:hover,
 .secondary-button:focus {
   background-color: var(--accent-color);
-  color: var(--secondary-button);
+  color: var(--white-color);
 }
 
 .icon-container {
